@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "dataFactoryName": {
+      "value": "BigDataADF"
+    },    
+    "dataFactoryLocation": {
+      "value": "East US"
+    },
+    "onPremSqlServerConnectionString": {
+      "value": "Server=mysqlvmlabel1.eastus.cloudapp.azure.com,1433;Database=testdb;Integrated Security=false;User ID=Azureadmin;Password=Welcome@12345"
+    },
+    "sqlTableName": {
+      "value": "[dbo].[emp]"
+    },
+    "azureStorageConnectionString": {
+      "value": "DefaultEndpointsProtocol=https;AccountName=sqlpiplinestorage;AccountKey=vm9XB7HOhqXz63xI7CPrBAVnJSK1Sv5eQF3z5BTlER5zaKMPXy4NK4giQiTj41ArQAPsU8gPi0sUShf0xQ2f1Q==;EndpointSuffix=core.windows.net"
+    },
+    "blobContainer": {
+      "value": "adfsqlcontainer"
+    },
+    "outputBlobFolder": {
+      "value": "fromonpremsql"
+
+    }
+    
+  }
+}
